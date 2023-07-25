@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div><h1>
+            Temperature <span>Convertor</span>
+        </h1></div>
+        <div class="main">
+        <div class="left-side">
+            <form>
+            <label for="celsius">Celsius</label>
+<input type="number" id="celsius" value="0">
+<label for="Fahrenheit">Fahrenheit</label>
+<input type="number" id="Fahrenheit" value="32">
+<button type="reset">Reset</button>
+</form>
+        </div>
+        <div class="rite-side">
+            <img src="assets/Scientist_Flatline.png">
+        </div>
+    </div>
+    </div>
+    <script>
+    let cel=document.getElementById("celsius");
+let fah=document.getElementById("Fahrenheit")
+cel.addEventListener('input',function(){
+    let c = this.value;
+    let f = (c*9/5)+32;
+    // this line code is for decimal limited
+    if(!Number.isInteger(f)){
+        f=f.toFixed(6);
+    }
+    fah.value=f;
+});
+fah.addEventListener('input',function(){
+    let f = this.value;
+    let c = (f-32)*5/9;
+    if(!Number.isInteger(c)){
+        c=c.toFixed(6);
+    }
+    cel.value=c;
+});
+</script>
+</body>
+</html>

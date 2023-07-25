@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: aliceblue;
+    overflow: hidden;
+}
+.container{
+    border-radius: 10px;
+    padding: 2rem 27rem;
+    /* height: 20rem;
+    width: 40rem; */
+    background-color: rgb(83, 84, 84);
+    gap: 0.5rem;
+    margin: 6rem 30rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+h1 span{
+    color: rgb(2, 252, 239);
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10px;
+background: linear-gradient(145deg, #9ae1eb, #a4ae79);
+box-shadow: 0px 0px 300px 1px rgb(223, 223, 223);
+}
+.left-side form{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-side form label{
+    font-size: 30px;
+    font-weight: 600;
+}
+.left-side form input{
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.left-side button{
+    font-weight: 500;
+    background: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.left-side button:hover{
+    font-weight: 500;
+outline: 1px solid black;
+background: transparent;
+color: black;
+}
+.rite-side img{
+    margin-left: 3rem;
+    height: 24rem;
+    width: 24rem;
+}
